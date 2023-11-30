@@ -20,11 +20,11 @@
         </Grid.RowDefinitions>
         <Label Grid.Column="0" FontSize="20" VerticalAlignment="Center" HorizontalAlignment="Center">Férfiak</Label>
         <Label Grid.Column="1" FontSize="20" VerticalAlignment="Center" HorizontalAlignment="Center">Nők</Label>
-        <ListBox x:Name="lbxFerfiak" Background="Aqua" Grid.Row="1"></ListBox>
-        <ListBox x:Name="lbxNok" Background="Aqua" Grid.Row="1" Grid.Column="1"></ListBox>
-        <TextBox Background="Aquamarine" Grid.Row="2"></TextBox>
-        <TextBox Background="Aquamarine" Grid.Row="2" Grid.Column="1"></TextBox>
-        <Button Content="Mix" Grid.ColumnSpan="2" Grid.Row="3" Click="Button_Click"/>
-        <ListBox Background="AliceBlue" Grid.ColumnSpan="2" Grid.Row="4"></ListBox>
+        <ListBox Width="350" Height="150" x:Name="lbxFerfiak" Background="Aqua" Grid.Row="1"></ListBox>
+        <ListBox Width="350" Height="150" x:Name="lbxNok" Background="Aqua" Grid.Row="1" Grid.Column="1"></ListBox>
+        <TextBox TextAlignment="Center" Width="200" Height="30" Background="Aquamarine" Grid.Row="2"></TextBox>
+        <TextBox x:Name="txbNo" KeyDown="txbNo_KeyDown" TextAlignment="Center" Width="200" Height="30" Background="Aquamarine" Grid.Row="2" Grid.Column="1"></TextBox>
+        <Button Width="200" Height="30" Content="Mix" Grid.ColumnSpan="2" Grid.Row="3" Click="Button_Click"/>
+        <ListBox x:Name="lbxParok" Width="400" Height="100" Background="AliceBlue" Grid.ColumnSpan="2" Grid.Row="4"></ListBox>
     </Grid>
 </Window>
